@@ -1,0 +1,4 @@
+#include <stdio.h>#include <conio.h>int main(int argc, char const *argv[]){    int bill, prev, crnt, read, rd;    printf("Enter previous reading : ");    scanf("%d", &prev);    printf("Enter current reading : ");    scanf("%d", &crnt);    read = crnt - prev;    if (read > 0 && read <= 50)    {        bill = 3.5*read;    }    else if (read <= 150)    {        rd = read-50;        bill = 4*rd + 3.5*50;    }    else if (read <= 250)    {    	rd = read-150;    	bill = 5.2*rd + 100*4 + 50*3.5;    }    else if (read > 250)    {        rd = read-250;        bill = 6.5*rd + 100*5.2 + 100*4 + 50*3.5;    }    else    {        printf("Input error.");    }    bill = bill + 100;    printf("The electric bill is %d\n", bill);    getch();}ress Any key and then Enter To Kill Process.  ");
+    scanf("%1s", &ch);
+    return 0;
+}
